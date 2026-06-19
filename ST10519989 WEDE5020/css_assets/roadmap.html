@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech_Path ZA</title>
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #222222;
+        --primary: #0066ff;
+        --accent: #00d4ff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 40px;
+        background: var(--bg);
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .Logo {
+        font-size: 28px;
+        font-weight: 800;
+        text-decoration: none;
+        color: #111;
+        letter-spacing: -1px;
+      }
+
+      .Nav-bar {
+        display: flex;
+        gap: 32px;
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      .Nav-bar a {
+        text-decoration: none;
+        color: var(--text);
+        transition: all 0.3s ease;
+      }
+
+      .Nav-bar a:hover {
+        color: var(--primary);
+        transform: translateY(-2px);
+      }
+
+      .roadmap-section {
+        padding: 100px 20px 120px;
+        background: linear-gradient(135deg, #f8fbff 0%, #f0f4ff 100%);
+        text-align: center;
+      }
+
+      h2 {
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #111;
+        letter-spacing: -1.5px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        color: #555;
+        max-width: 700px;
+        margin: 0 auto 50px;
+      }
+
+      table {
+        font-family: "Segoe UI", system-ui, sans-serif;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+
+      th,
+      td {
+        padding: 20px 24px;
+        text-align: left;
+        font-size: 17px;
+      }
+
+      th {
+        background: linear-gradient(135deg, black, black);
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      td {
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover {
+        background-color: #f8fbff;
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 25px rgba(0, 102, 255, 0.1);
+      }
+
+      .career {
+        font-weight: 700;
+        color: #111;
+        font-size: 18px;
+      }
+
+      .level {
+        color: #0066ff;
+        font-weight: 600;
+      }
+
+      .salary {
+        font-weight: 700;
+        color: #00aa66;
+        font-size: 18px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 24px;
+        background: #111;
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      footer strong {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a class="Logo" href="Index.html">Tech_Path ZA</a>
+      <div class="Nav-bar">
+        <a href="Index.html">Home</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="about.html">About</a>
+        <a href="contact us.html">Contact us</a>
+      </div>
+    </nav>
+
+    <div class="roadmap-section">
+      <h2>Tech Career Roadmap</h2>
+      <p class="subtitle">
+        Realistic salary ranges and career progression in South Africa’s tech
+        industry (2026)
+      </p>
+
+      <table>
+        <tr>
+          <th>Career Path</th>
+          <th>Career Level</th>
+          <th>Monthly Salary Range</th>
+        </tr>
+        <tr>
+          <td class="career">Software Engineer</td>
+          <td class="level">Intern – Senior</td>
+          <td class="salary">R8,000 – R68,000+</td>
+        </tr>
+        <tr>
+          <td class="career">Data Engineer</td>
+          <td class="level">Intern – Senior</td>
+          <td class="salary">R12,000 – R73,000+</td>
+        </tr>
+        <tr>
+          <td class="career">Data Scientist</td>
+          <td class="level">Intern – Senior</td>
+          <td class="salary">R12,000 – R70,000+</td>
+        </tr>
+        <tr>
+          <td class="career">Data Analyst</td>
+          <td class="level">Intern – Senior</td>
+          <td class="salary">R10,000 – R65,000+</td>
+        </tr>
+        <tr>
+          <td class="career">Cybersecurity Specialist</td>
+          <td class="level">Intern – Senior</td>
+          <td class="salary">R12,000 – R82,000+</td>
+        </tr>
+        <tr>
+          <td class="career">AI/ML Engineer</td>
+          <td class="level">Intern – Senior</td>
+          <td class="salary">R12,000 – R85,000+</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <strong>TechPath ZA</strong> &nbsp;·&nbsp; Realistic tech career guidance
+      for South Africa &nbsp;·&nbsp; © 2026
+    </footer>
+  </body>
+</html>
